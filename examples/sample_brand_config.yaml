@@ -1,0 +1,300 @@
+# Sample Brand Configuration for Presentation Toolkit
+# Customize this file for your brand
+
+version: "1.0"
+brand_name: "Sample Brand"
+
+# Template files (relative to config file or absolute paths)
+template:
+  default: "templates/brand-template.pptx"
+  extended: "templates/brand-template-extended.pptx"
+
+# Brand color palette (hex values without #)
+colors:
+  primary:
+    brand_blue: "0066CC"
+    brand_dark: "003366"
+    brand_navy: "001A33"
+  secondary:
+    light_blue: "CCE0FF"
+    white: "FFFFFF"
+    black: "000000"
+  tertiary:
+    accent_purple: "6633CC"
+    accent_yellow: "FFCC00"
+    accent_red: "CC3333"
+    accent_green: "339933"
+
+# Font configuration
+fonts:
+  brand:
+    - "Brand Font"
+    - "Noto Sans"
+  replace:
+    - "Arial"
+    - "Calibri"
+    - "Helvetica"
+    - "Verdana"
+    - "Tahoma"
+    - "Times"
+    - "Georgia"
+  mapping:
+    headlines: "Brand Font Bold"
+    body: "Noto Sans Regular"
+    captions: "Noto Sans Light"
+
+# Slide catalog - maps content categories to template slide indices
+# Customize these indices to match your template
+slide_catalog:
+  # Opening slides
+  title_opening:
+    indices: [0]
+    description: "Opening/title slide with speaker info"
+  hero_photo:
+    indices: [1]
+    description: "Hero image with text overlay"
+  statement_center:
+    indices: [3, 33]
+    description: "Centered statement/tagline"
+
+  # Section dividers
+  section_divider:
+    indices: [4]
+    description: "Section break/divider"
+
+  # Content with images
+  content_image_left:
+    indices: [5]
+    description: "Image on left, text on right"
+  content_image_right:
+    indices: [6, 9]
+    description: "Image on right, text on left"
+
+  # Feature/bullet slides
+  feature_default:
+    indices: [7]
+    description: "Standard feature slide with bullets"
+  feature_blue_bg:
+    indices: [21]
+    description: "Feature with blue background"
+  feature_yellow_bg:
+    indices: [2]
+    description: "Feature with yellow background"
+  feature_white_bg:
+    indices: [9, 20]
+    description: "Feature with white background"
+
+  # Statistics slides
+  stat_default:
+    indices: [10]
+    description: "Standard statistics display"
+  stat_outline_gui:
+    indices: [10]
+    description: "Stats with outline GUI block"
+  stat_coral_filled:
+    indices: [11, 12]
+    description: "Stats with coral GUI block"
+  stat_navy_filled:
+    indices: [15, 16]
+    description: "Stats with navy GUI block"
+  stat_photo_left:
+    indices: [13, 14]
+    description: "Stats with photo on left"
+  stat_photo_bg:
+    indices: [16, 17]
+    description: "Stats with photo background"
+
+  # Quote slides
+  quote_default:
+    indices: [8]
+    description: "Standard quote slide"
+  quote_navy_bg:
+    indices: [8]
+    description: "Quote with navy background"
+  quote_centered:
+    indices: [41]
+    description: "Centered quote"
+
+  # Two-column layouts
+  two_column:
+    indices: [42, 44]
+    description: "Two-column comparison"
+
+  # Photo features
+  photo_text_left:
+    indices: [35]
+    description: "Photo bg, text on left"
+  photo_text_right:
+    indices: [47]
+    description: "Photo bg, text on right"
+
+  # Numbered content
+  numbered_02:
+    indices: [29]
+    description: "Step 2 layout"
+  numbered_03:
+    indices: [30]
+    description: "Step 3 layout"
+  numbered_04:
+    indices: [31]
+    description: "Step 4 layout"
+  numbered_05:
+    indices: [32]
+    description: "Step 5 layout"
+
+  # Closing slides
+  closing_cta:
+    indices: [33]
+    description: "Call-to-action closing"
+  closing_statement:
+    indices: [46]
+    description: "Final statement closing"
+
+  # Multi-zone layouts (if using extended template)
+  stats_dashboard:
+    indices: [49]
+    description: "6-zone stats dashboard"
+  case_study_full:
+    indices: [50]
+    description: "Full case study layout"
+
+# Text capacity limits per layout
+# Values: [title_max_chars, body_max_chars, title_font_size, body_font_size]
+# Font sizes are in hundredths of a point (2400 = 24pt)
+text_capacity:
+  title_opening: [200, 150, 3600, 1800]
+  hero_photo: [150, 300, 3600, 1400]
+  statement_center: [200, 300, 3200, 1600]
+  section_divider: [150, 300, 4000, 1800]
+  content_image_left: [150, 500, 2400, 1400]
+  content_image_right: [150, 500, 2400, 1400]
+  feature_default: [150, 500, 2400, 1400]
+  feature_blue_bg: [150, 500, 2400, 1400]
+  feature_yellow_bg: [150, 500, 2400, 1400]
+  feature_white_bg: [150, 500, 2400, 1400]
+  stat_default: [50, 500, 7200, 1400]
+  stat_outline_gui: [50, 500, 7200, 1400]
+  stat_coral_filled: [50, 500, 7200, 1400]
+  stat_navy_filled: [50, 500, 7200, 1400]
+  stat_photo_left: [50, 500, 7200, 1400]
+  stat_photo_bg: [50, 400, 7200, 1400]
+  quote_default: [300, 200, 2400, 1600]
+  quote_navy_bg: [300, 200, 2400, 1600]
+  quote_centered: [300, 200, 2800, 1400]
+  two_column: [100, 600, 2400, 1200]
+  photo_text_left: [150, 300, 2800, 1400]
+  photo_text_right: [150, 400, 2400, 1400]
+  numbered_02: [50, 500, 7200, 1400]
+  numbered_03: [50, 500, 7200, 1400]
+  numbered_04: [50, 500, 7200, 1400]
+  numbered_05: [50, 500, 7200, 1400]
+  closing_cta: [200, 200, 3200, 1800]
+  closing_statement: [300, 200, 2000, 1400]
+  stats_dashboard: [50, 300, 7200, 1800]
+  case_study_full: [100, 600, 2400, 1400]
+  default: [150, 500, 2400, 1400]
+
+# Content type detection patterns
+content_patterns:
+  statistic:
+    title_patterns:
+      - '^\d+%'                   # Starts with percentage
+      - '^\$[\d,]+'               # Dollar amounts
+      - '^[\d,]+\+?\s*(million|billion|users|websites|developers)'
+      - '^\d+x'                   # Multipliers
+      - '^\d+/\d+'                # Fractions
+      - '^#\d+'                   # Rankings
+    anywhere_patterns:
+      - '\b\d{2,}%\b'             # Any percentage 10%+
+      - '\b\d+\s*(million|billion)\b'
+      - '\bover\s+\d+'
+      - '\bmore than\s+\d+'
+
+  quote:
+    title_patterns:
+      - '^["""]'                  # Starts with quote mark
+    body_patterns:
+      - '^\s*—'                   # Attribution dash
+      - 'said\s+\w+'              # "said [Name]"
+
+  numbered_step:
+    title_patterns:
+      - '^(step\s*)?\d+[.:\)]'    # "Step 1:" or "1."
+      - '^(first|second|third|fourth|fifth)'
+      - '\bphase\s*\d+'
+      - '\bpart\s*\d+'
+
+  bullet_list:
+    body_patterns:
+      - '^\s*[-•▪]\s+'            # Bullet markers
+      - '\n\s*[-•▪]\s+'           # Multiple bullets
+
+  comparison:
+    anywhere_patterns:
+      - '\bvs\.?\b'               # "vs" or "vs."
+      - '\bbefore\b.*\bafter\b'
+      - '\bpros?\b.*\bcons?\b'
+
+  section_header:
+    keywords:
+      - 'overview'
+      - 'introduction'
+      - 'summary'
+      - 'agenda'
+      - 'contents'
+      - 'why'
+      - 'what is'
+      - 'features'
+      - 'benefits'
+      - 'resources'
+
+  case_study:
+    keywords:
+      - 'customer'
+      - 'client'
+      - 'case study'
+      - 'success story'
+      - 'testimonial'
+      - 'partner'
+      - 'rebuilt'
+      - 'transformed'
+      - 'organization'
+      - 'implemented'
+    title_patterns:
+      - '\bhow\s+\w+\s+(rebuilt|transformed|migrated|updated|launched)'
+
+  feature:
+    keywords:
+      - 'feature'
+      - 'capability'
+      - 'integration'
+      - 'benefit'
+      - 'advantage'
+      - 'solution'
+      - 'powerful'
+      - 'flexible'
+
+# Orientation configuration for layout variety
+orientations:
+  left:
+    - 'content_image_left'
+    - 'photo_text_left'
+    - 'stat_photo_left'
+  right:
+    - 'content_image_right'
+    - 'photo_text_right'
+    - 'feature_white_bg'
+  center:
+    - 'statement_center'
+    - 'quote_centered'
+    - 'section_divider'
+    - 'closing_cta'
+    - 'stats_dashboard'
+    - 'case_study_full'
+
+# GUI block color rotation order
+gui_colors:
+  - 'blue'
+  - 'coral'
+  - 'yellow'
+  - 'navy'
